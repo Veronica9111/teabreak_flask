@@ -3,15 +3,16 @@
 {% block head %}
 	{{ super() }}
 	<link rel="stylesheet" href="static/css/mysite.css" />
+	<script type="text/javascript" src="static/js/validate.js"></script>
 {% endblock %}
 {% block content %}
 <div class="container">
 	<form class="form-register">
 		<h2 class="form-register-heading">New Account</h2>
-		<input type="text" class="input-block-level" placeholder="Email Address">
-		<input type="text" class="input-block-level" placeholder="Nick Name">
-		<input type="password" class="input-block-level" placeholder="Password">
-		<input type="password" class="input-block-level" placeholder="Confirm Password">
+		<input id="register-email" type="text" class="input-block-level" placeholder="Email Address">
+		<input id="register-nickname" type="text" class="input-block-level" placeholder="Nick Name">
+		<input id="register-password" type="password" class="input-block-level" placeholder="Password">
+		<input id="register-confirm-password" type="password" class="input-block-level" placeholder="Confirm Password">
 		<button class="btn btn-large btn-primary" type="submit">Register</button>
 	</form>
 
