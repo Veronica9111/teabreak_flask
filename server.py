@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 from flask import *
+import os
+import sys
+
+sys.path.append(os.path.abspath('.') + "/modules/controller")
+sys.path.append(os.path.abspath('.') + "/modules/model")
+from UserManager import *
 
 app = Flask(__name__)
 
@@ -11,9 +17,9 @@ def index():
 @app.route("/register", methods=['GET', 'POST'])
 def register():
 	if request.method == 'POST':
-		#user = User(form.username.data, form.email.data, form.password.data)
-		#userDB.add(user)
 		user_data = request.values
+		um = UserManager(user_data['nickname'],user_data['email'],user_data['password'],)
+		um.create_new_user()
 		return render_template('main.html', nickname=user_data['nickname'])
 	return render_template("register.html")
 

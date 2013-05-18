@@ -20,8 +20,10 @@ class UserDB:
 		}
 		self._users.insert(user)
 
+	def get_all_users(self):
+		users = self._users.find()
+		return users
+
 
 if __name__ == "__main__":
 	db = UserDB()
-	print db.get_user_by_name("veronica")
-	#db.create_user("veronica", "test@localhost.com", "111111") 
