@@ -6,12 +6,13 @@ Footprints
 
 2013-05-11 Handle register information
 
+2013-05-18 Add mongodb operates for register
+
 Plan
 ----
 
 * Improve the dynamic validation for register form
 * Add validation in Controller
-* Keep data with MongoDB
 * Use wtf instead of plain html
 * Look into session
 * Signin with Google account
