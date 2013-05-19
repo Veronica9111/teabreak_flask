@@ -8,6 +8,7 @@ Footprints
 
 2013-05-18 Add mongodb operates for register
 
+2013-05-19 Improve register validation
 Plan
 ----
 
