@@ -9,6 +9,9 @@ Footprints
 2013-05-18 Add mongodb operates for register
 
 2013-05-19 Improve register validation
+
+2013-05-24 Add main page layout
+
 Plan
 ----
 
@@ -19,3 +22,7 @@ Plan
 * Signin with Google account
 * ...
 
+
+Others
+------
+The Teapots image is from ©2010-2013 ~-axel-

@@ -3,13 +3,15 @@
 {% block head %}
     {{ super() }}
     <link rel="stylesheet" href="static/css/signin.css" />
+    <link rel="stylesheet" href="static/css/main.css" />
     <style type="text/css">
         span {font-size:14px}
     </style>
 
 {% endblock %}
+{% block background %}background="static/img/Teapot.png"{% endblock %}
 {% block content %}
-<h1>{{ nickname }}
-    <span>[<a href="/logout">logout</a>]</span>
-</h1>
+<div class="hero-unit main-unit">{{ nickname }}
+	<span>[<a href="/logout">logout</a>]</span>
+</div>
 {% endblock %}
