@@ -2,17 +2,17 @@
 {% block title %}Index{% endblock %}
 {% block head %}
     {{ super() }}
-	<link rel="stylesheet" href="static/css/signin.css" />
-
+    <link rel="stylesheet" href="static/css/signin.css" />
+    <script type="text/javascript" src="static/js/validate.js"></script>
 {% endblock %}
 {% block content %}
     <div class="container">
-		<form class="form-signin">
+		<form class="form-signin" method="post" action="/login">
         	<h2 class="form-signin-heading">Please sign in</h2>
-        	<input type="text" class="input-block-level" placeholder="Email address">
-        	<input type="password" class="input-block-level" placeholder="Password">
+            <p>Email:<input type="text" class="input-block-level" name="email" placeholder="Email address"></p>
+        	<p>Password:<input type="password" class="input-block-level" name="password" placeholder="Password"></p>
         	<label class="checkbox">
-          		<input type="checkbox" value="remember-me"> Remember me
+          		<input type="checkbox" name="remember_me" value=1> Remember me
 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="register">Register</a>
         	</label>
         	<button class="btn btn-large btn-primary" type="submit">Sign in</button>

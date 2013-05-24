@@ -3,8 +3,13 @@
 {% block head %}
     {{ super() }}
     <link rel="stylesheet" href="static/css/signin.css" />
+    <style type="text/css">
+        span {font-size:14px}
+    </style>
 
 {% endblock %}
 {% block content %}
-<h1>{{ nickname }}<h1>
+<h1>{{ nickname }}
+    <span>[<a href="/logout">logout</a>]</span>
+</h1>
 {% endblock %}
