@@ -11,7 +11,14 @@
 {% endblock %}
 {% block background %}background="static/img/Teapot.png"{% endblock %}
 {% block content %}
-<div class="hero-unit main-unit">{{ nickname }}
-	<span>[<a href="/logout">logout</a>]</span>
+<div class="hero-unit main-unit">
+	<div id="main-left-side">{{ nickname }}
+        <span>[<a href="/logout">logout</a>]</span>
+    </div>
+	<div id="main-right-side">
+        {% for post in posts %}
+            <div class="post"><h5>{{ post.post }}</h5>{{ post.timestamp }}</div><br>
+        {% endfor %}
+	</div>
 </div>
 {% endblock %}

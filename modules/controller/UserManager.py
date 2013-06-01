@@ -10,7 +10,7 @@ class UserManager:
 		self._name = name
 		self._mail = mail
 		self._password = password
-		#self._userDB = UserDB()
+		self._userDB = UserDB()
 
 	def encode_password(self):
 		self._password = hashlib.md5(self._password).hexdigest()

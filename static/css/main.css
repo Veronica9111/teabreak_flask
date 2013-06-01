@@ -23,3 +23,24 @@ body{
 #content{
 	height:100%;
 }
+
+#main-left-side{
+	width:25%;
+	height: 100%;
+    float: left;
+	border-right: 1px solid grey;
+}
+
+#main-right-side{
+    float: left;
+    width: 70%;
+}
+
+.post{
+    margin-left: 10%;
+    padding: 3px;
+  background-color: #dddddd;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
